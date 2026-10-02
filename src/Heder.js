@@ -19,7 +19,7 @@ function Heder({ setpage }) {
           <i className={`fa ${menuOpen ? "fa-times" : "fa-bars"}`}></i>
         </button>
 
-        <ul className={menuOpen ? "active" : ""}>
+        <ul className={menuOpen ? "active" : ""} onClick={() => setMenuOpen(false)}>
           <li>
             <a href="#K" onClick={() => setpage("Home")}>
               Home
