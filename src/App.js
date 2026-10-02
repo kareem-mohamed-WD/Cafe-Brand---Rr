@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Heder from "./Heder";
+import Home from "./componets/Home";
+import About from "./componets/About";
+import Menu from "./componets/Menu";
+import Testimonials from "./Testimonials";
+import Gallery from "./Gallery";
+import Contact from "./Contact";
 
 function App() {
+  const [page, setpage] = useState("Home");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Heder setpage={setpage} />
+
+      {page === "Home" && <Home />}
+      {page === "About" && <About />}
+      {page === "Menu" && <Menu />}
+      {page === "Testimonials" && <Testimonials />}
+      {page === "Gallery" && <Gallery />}
+      {page === "Contact" && <Contact />}
+    </>
   );
 }
 
