@@ -6,6 +6,7 @@ import Menu from "./componets/Menu";
 import Testimonials from "./Testimonials";
 import Gallery from "./Gallery";
 import Contact from "./Contact";
+import Footer from "./Footer";
 
 function App() {
   const [page, setpage] = useState("Home");
@@ -13,13 +14,13 @@ function App() {
   return (
     <>
       <Heder setpage={setpage} />
-
       {page === "Home" && <Home />}
       {page === "About" && <About />}
       {page === "Menu" && <Menu />}
       {page === "Testimonials" && <Testimonials />}
       {page === "Gallery" && <Gallery />}
       {page === "Contact" && <Contact />}
+      <Footer />
     </>
   );
 }
