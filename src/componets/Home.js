@@ -21,7 +21,7 @@ function Home({ contacts }) {
           </p>
 
           <a href="#Menu">
-            <button className="button1">Order Now</button>
+            <button className="button1" onClick={() => contacts("Contact")}>Order Now</button>
           </a>
 
           <a href="#Contact">
