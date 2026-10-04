@@ -1,4 +1,4 @@
-function Home({ contacts }) {
+function Home({ contacts}) {
   return (
     <div
       className="home1"
