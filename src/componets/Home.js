@@ -1,16 +1,14 @@
-function Home() {
+function Home({ contacts }) {
   return (
-    <div className="home1"   style={{
-    backgroundImage: `
-      linear-gradient(
-        90deg,
-        rgba(20, 20, 20, 0.98),
-        rgba(20, 20, 20, 0.82),
-        rgba(20, 20, 20, 0.55)
-      ),
-      url("/img/coffee-hero-section.png")
-    `,
-  }}>
+    <div
+      className="home1"
+      style={{
+        background: `linear-gradient(90deg, rgba(20,20,20,0.98),
+          rgba(20,20,20,0.82), rgba(20,20,20,0.55)),
+           url('/img/coffee-hero-section.png')
+            center center/cover no-repeat`,
+      }}
+    >
       <div id="Home" className="sacshan1">
         <div className="text-sacshan1">
           <span>Best Coffee</span>
@@ -27,7 +25,9 @@ function Home() {
           </a>
 
           <a href="#Contact">
-            <button className="button2">Contact Us</button>
+            <button className="button2" onClick={() => contacts("Contact")}>
+              Contact Us
+            </button>
           </a>
         </div>
 

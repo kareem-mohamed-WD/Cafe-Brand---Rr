@@ -65,15 +65,6 @@ hr {
 
 .home1 {
   min-height: 100vh;
-
-  background:
-    linear-gradient(
-      90deg,
-      rgba(20, 20, 20, 0.98),
-      rgba(20, 20, 20, 0.82),
-      rgba(20, 20, 20, 0.55)
-    );
-
   background-size: cover;
   background-position: center;
   position: relative;
@@ -86,23 +77,17 @@ hr {
 nav {
   width: 100%;
   height: 85px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   padding: 0 7%;
-
   position: fixed;
   top: 0;
   left: 0;
-
   z-index: 999;
-
   background: rgba(20, 20, 20, 0.72);
   backdrop-filter: blur(15px);
-
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(212, 21, 21, 0.08);
 }
 
 nav img {
@@ -110,9 +95,8 @@ nav img {
   transition: var(--transition);
 }
 
-nav  img:hover {
+nav img:hover {
   transform: scale(1.05);
-
 }
 
 nav ul {

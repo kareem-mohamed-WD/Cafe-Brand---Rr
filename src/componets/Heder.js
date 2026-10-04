@@ -12,7 +12,7 @@ function Heder({ setpage }) {
 
       <nav>
         <div>
-          <img src="/img/logoo.png" alt="logo" />{" "}
+          <img src="img/logoo.png" alt="logo" />{" "}
         </div>
 
         <button className="openbtn" onClick={() => setMenuOpen(!menuOpen)}>
